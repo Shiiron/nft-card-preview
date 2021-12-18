@@ -1,14 +1,36 @@
 $cyan: hsl(178, 100%, 50%);
+$fontColor: hsl(215, 51%, 70%);
 
+/* Utility class */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spacer {
+    margin-right: 7px;
+}
+
+.interactive {
+    color: white;
+    &:hover {
+        color: $cyan;
+        transition: color .5s;
+        cursor: pointer;
+    }
+}
+
+/* main classes */
 .card-layout {
     height: auto;
     width: 300px;
     background-color: hsl(216, 50%, 16%);
-    border-radius: 10px;
-    padding: 20px;
-
-    hr {
+    border-radius: 15px;
+    padding: 25px;
+    .separator {
         color: hsl(215, 32%, 27%);
+        margin: 10px 0;
     }
 }
 
@@ -16,16 +38,13 @@ $cyan: hsl(178, 100%, 50%);
     background-color: hsl(217, 54%, 11%);
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .card-image {
     position: relative;
     height: 300px;
     img {
-        border-radius: 5px;
+        border-radius: 10px;
         width: 100%;
     }
 
@@ -37,10 +56,8 @@ $cyan: hsl(178, 100%, 50%);
         height: 100%;
         background-color: hsl(178, 100%, 50%, 0.5);
         opacity: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 5px;
+        transition: opacity .5s;
         img {
             width: 50px;
         }
@@ -52,35 +69,32 @@ $cyan: hsl(178, 100%, 50%);
 }
 
 .card-description {
+    color: $fontColor;
     width: 100%;
     h2 {
-        color: white;
         font-size: 1.2rem;
+        line-height: 1.2rem;
         font-weight: 600;
-        margin: 15px 0;
-        &:hover {
-            color: $cyan;
-            cursor: pointer;
-        }
+        margin: 25px 0 15px 0;
     }
 
     p {
-        color: hsl(215, 51%, 70%);
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: 300;
+        line-height: 1.5rem;
+        margin-bottom: 15px;
     }
 
     .card-info {
         font-size: 0.8rem;
+        line-height: 1.2rem;
         display: inline-flex;
         width: 50%;
-        margin-bottom: 15px;
     }
 }
 
 .card-time-left {
     justify-content: flex-end;
-    color: hsl(215, 51%, 70%);
 }
 
 .card-eth {
@@ -88,28 +102,16 @@ $cyan: hsl(178, 100%, 50%);
     font-weight: 600;
 }
 
-.spacer {
-    margin-right: 5px;
-}
-
 .card-user-info {
     display: flex;
     align-items: center;
     height: 40px;
     font-size: .8rem;
-    color: hsl(215, 51%, 70%);
-    img {
-        width: 25px;
-        margin-right: 10px;
+    color: $fontColor;
+    .card-user-profile {
+        width: 30px;
+        margin-right: 15px;
         border: 1px solid white;
         border-radius: 50%;
-    }
-}
-
-.card-creator {
-    color: white;
-    &:hover {
-        color: $cyan;
-        cursor: pointer;
     }
 }

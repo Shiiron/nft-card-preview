@@ -11,12 +11,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,28 +25,27 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![desktop](./src/assets/challenge-screenshots/nft-preview-card/desktop.png)
+![mobile](./src/assets/challenge-screenshots/nft-preview-card/mobile.png)
 
 ### Links
 
-- Solution URL: [https://nft-card-preview-shiiron.netlify.app/]
+- Solution URL: [nft card preview](https://nft-card-preview-shiiron.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Angular
+- Netlify (for hosting)
 
 ### What I learned
 
+- Creating a new basic Angular project (that i will use for other frontend mentor challenge)
+- Setting up and deploying my solution on Netlify
+- Creating overlay for images
+
+Easy and simple project but a very good way to get me into frontend mentor projects. I do think the result is not yet perfect and i could implement a lot of things. I sure will look for that in my next try !
 
 ### Useful resources
 
