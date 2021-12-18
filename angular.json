@@ -103,6 +103,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/nft-card-preview",
+            "netlifyToken": "3TCnOb6jYqylKcHRs2QsVvA6BB_OkYP7vWEUelXOpyE",
+            "siteId": "n"
+          }
         }
       }
     }
